@@ -16,9 +16,11 @@
 		4C7212EF2A7E712200DAE09F /* JobsCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */; };
 		4C7212F32A7E724700DAE09F /* JobModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212F22A7E724700DAE09F /* JobModels.swift */; };
 		4C7212F52A7E726200DAE09F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212F42A7E726200DAE09F /* NetworkManager.swift */; };
+		923E99A32F7C7C5B69CCD0FA /* Pods_Coople_Krushev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92CEB5F7217DAFF0A1C0EAF /* Pods_Coople_Krushev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037EE329146B20BCBFB29F73 /* Pods-Coople_Krushev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coople_Krushev.debug.xcconfig"; path = "Target Support Files/Pods-Coople_Krushev/Pods-Coople_Krushev.debug.xcconfig"; sourceTree = "<group>"; };
 		4C7212D12A7E6C4F00DAE09F /* Coople_Krushev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coople_Krushev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7212D42A7E6C4F00DAE09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7212D62A7E6C4F00DAE09F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCoordinators.swift; sourceTree = "<group>"; };
 		4C7212F22A7E724700DAE09F /* JobModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModels.swift; sourceTree = "<group>"; };
 		4C7212F42A7E726200DAE09F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A92CEB5F7217DAFF0A1C0EAF /* Pods_Coople_Krushev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coople_Krushev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC5AE6A3AC0418589467FEE /* Pods-Coople_Krushev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coople_Krushev.release.xcconfig"; path = "Target Support Files/Pods-Coople_Krushev/Pods-Coople_Krushev.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				923E99A32F7C7C5B69CCD0FA /* Pods_Coople_Krushev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				4C7212D32A7E6C4F00DAE09F /* Coople_Krushev */,
 				4C7212D22A7E6C4F00DAE09F /* Products */,
+				AE43B09F0055E91AB9CF27E3 /* Pods */,
+				F07FC8485EC64C53E4756142 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,14 +69,14 @@
 		4C7212D32A7E6C4F00DAE09F /* Coople_Krushev */ = {
 			isa = PBXGroup;
 			children = (
-				4C7212D42A7E6C4F00DAE09F /* AppDelegate.swift */,
-				4C7212D62A7E6C4F00DAE09F /* SceneDelegate.swift */,
+				4C7212ED2A7E70F400DAE09F /* Coordinators */,
 				4C7212F12A7E721200DAE09F /* Managers */,
 				4C7212F02A7E71CC00DAE09F /* Models */,
-				4C7212ED2A7E70F400DAE09F /* Coordinators */,
 				4C7212E82A7E6F3D00DAE09F /* Screens */,
-				4C7212DD2A7E6C5100DAE09F /* Assets.xcassets */,
 				4C7212DF2A7E6C5100DAE09F /* LaunchScreen.storyboard */,
+				4C7212D42A7E6C4F00DAE09F /* AppDelegate.swift */,
+				4C7212D62A7E6C4F00DAE09F /* SceneDelegate.swift */,
+				4C7212DD2A7E6C5100DAE09F /* Assets.xcassets */,
 				4C7212E22A7E6C5100DAE09F /* Info.plist */,
 			);
 			path = Coople_Krushev;
@@ -108,6 +115,23 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		AE43B09F0055E91AB9CF27E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				037EE329146B20BCBFB29F73 /* Pods-Coople_Krushev.debug.xcconfig */,
+				FCC5AE6A3AC0418589467FEE /* Pods-Coople_Krushev.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F07FC8485EC64C53E4756142 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A92CEB5F7217DAFF0A1C0EAF /* Pods_Coople_Krushev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C7212E52A7E6C5100DAE09F /* Build configuration list for PBXNativeTarget "Coople_Krushev" */;
 			buildPhases = (
+				A300D47C9050B832102690FB /* [CP] Check Pods Manifest.lock */,
 				4C7212CD2A7E6C4F00DAE09F /* Sources */,
 				4C7212CE2A7E6C4F00DAE09F /* Frameworks */,
 				4C7212CF2A7E6C4F00DAE09F /* Resources */,
+				E26B33793A67B467E31A7AFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +198,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A300D47C9050B832102690FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coople_Krushev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26B33793A67B467E31A7AFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coople_Krushev/Pods-Coople_Krushev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coople_Krushev/Pods-Coople_Krushev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coople_Krushev/Pods-Coople_Krushev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C7212CD2A7E6C4F00DAE09F /* Sources */ = {
@@ -318,6 +386,7 @@
 		};
 		4C7212E62A7E6C5100DAE09F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 037EE329146B20BCBFB29F73 /* Pods-Coople_Krushev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -345,6 +414,7 @@
 		};
 		4C7212E72A7E6C5100DAE09F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC5AE6A3AC0418589467FEE /* Pods-Coople_Krushev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
