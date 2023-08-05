@@ -14,6 +14,8 @@
 		4C7212EA2A7E6F5F00DAE09F /* JobsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212E92A7E6F5F00DAE09F /* JobsListViewModel.swift */; };
 		4C7212EC2A7E6F8A00DAE09F /* JobsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212EB2A7E6F8A00DAE09F /* JobsListViewController.swift */; };
 		4C7212EF2A7E712200DAE09F /* JobsCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */; };
+		4C7212F32A7E724700DAE09F /* JobModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212F22A7E724700DAE09F /* JobModels.swift */; };
+		4C7212F52A7E726200DAE09F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212F42A7E726200DAE09F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4C7212E92A7E6F5F00DAE09F /* JobsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsListViewModel.swift; sourceTree = "<group>"; };
 		4C7212EB2A7E6F8A00DAE09F /* JobsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsListViewController.swift; sourceTree = "<group>"; };
 		4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCoordinators.swift; sourceTree = "<group>"; };
+		4C7212F22A7E724700DAE09F /* JobModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModels.swift; sourceTree = "<group>"; };
+		4C7212F42A7E726200DAE09F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			children = (
 				4C7212D42A7E6C4F00DAE09F /* AppDelegate.swift */,
 				4C7212D62A7E6C4F00DAE09F /* SceneDelegate.swift */,
+				4C7212F12A7E721200DAE09F /* Managers */,
 				4C7212F02A7E71CC00DAE09F /* Models */,
 				4C7212ED2A7E70F400DAE09F /* Coordinators */,
 				4C7212E82A7E6F3D00DAE09F /* Screens */,
@@ -90,8 +95,17 @@
 		4C7212F02A7E71CC00DAE09F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4C7212F22A7E724700DAE09F /* JobModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4C7212F12A7E721200DAE09F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4C7212F42A7E726200DAE09F /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +181,8 @@
 				4C7212EA2A7E6F5F00DAE09F /* JobsListViewModel.swift in Sources */,
 				4C7212EF2A7E712200DAE09F /* JobsCoordinators.swift in Sources */,
 				4C7212EC2A7E6F8A00DAE09F /* JobsListViewController.swift in Sources */,
+				4C7212F52A7E726200DAE09F /* NetworkManager.swift in Sources */,
+				4C7212F32A7E724700DAE09F /* JobModels.swift in Sources */,
 				4C7212D52A7E6C4F00DAE09F /* AppDelegate.swift in Sources */,
 				4C7212D72A7E6C4F00DAE09F /* SceneDelegate.swift in Sources */,
 			);
