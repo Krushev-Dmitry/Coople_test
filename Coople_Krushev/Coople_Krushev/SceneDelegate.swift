@@ -14,12 +14,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        let firstVC = ViewController()
 
         let navigationController = UINavigationController()
-        navigationController.pushViewController(firstVC, animated: false)
-        
+        let jobsCoordinator = JobsCoordinatorImpl(navigationController: navigationController)
+        jobsCoordinator.start()
+
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

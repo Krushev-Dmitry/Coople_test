@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		4C7212D52A7E6C4F00DAE09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212D42A7E6C4F00DAE09F /* AppDelegate.swift */; };
 		4C7212D72A7E6C4F00DAE09F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212D62A7E6C4F00DAE09F /* SceneDelegate.swift */; };
-		4C7212D92A7E6C4F00DAE09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212D82A7E6C4F00DAE09F /* ViewController.swift */; };
 		4C7212DE2A7E6C5100DAE09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7212DD2A7E6C5100DAE09F /* Assets.xcassets */; };
 		4C7212E12A7E6C5100DAE09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7212DF2A7E6C5100DAE09F /* LaunchScreen.storyboard */; };
+		4C7212EA2A7E6F5F00DAE09F /* JobsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212E92A7E6F5F00DAE09F /* JobsListViewModel.swift */; };
+		4C7212EC2A7E6F8A00DAE09F /* JobsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212EB2A7E6F8A00DAE09F /* JobsListViewController.swift */; };
+		4C7212EF2A7E712200DAE09F /* JobsCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C7212D12A7E6C4F00DAE09F /* Coople_Krushev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coople_Krushev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7212D42A7E6C4F00DAE09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7212D62A7E6C4F00DAE09F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C7212D82A7E6C4F00DAE09F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C7212DD2A7E6C5100DAE09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C7212E02A7E6C5100DAE09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C7212E22A7E6C5100DAE09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7212E92A7E6F5F00DAE09F /* JobsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsListViewModel.swift; sourceTree = "<group>"; };
+		4C7212EB2A7E6F8A00DAE09F /* JobsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsListViewController.swift; sourceTree = "<group>"; };
+		4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCoordinators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,38 @@
 			children = (
 				4C7212D42A7E6C4F00DAE09F /* AppDelegate.swift */,
 				4C7212D62A7E6C4F00DAE09F /* SceneDelegate.swift */,
-				4C7212D82A7E6C4F00DAE09F /* ViewController.swift */,
+				4C7212F02A7E71CC00DAE09F /* Models */,
+				4C7212ED2A7E70F400DAE09F /* Coordinators */,
+				4C7212E82A7E6F3D00DAE09F /* Screens */,
 				4C7212DD2A7E6C5100DAE09F /* Assets.xcassets */,
 				4C7212DF2A7E6C5100DAE09F /* LaunchScreen.storyboard */,
 				4C7212E22A7E6C5100DAE09F /* Info.plist */,
 			);
 			path = Coople_Krushev;
+			sourceTree = "<group>";
+		};
+		4C7212E82A7E6F3D00DAE09F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4C7212E92A7E6F5F00DAE09F /* JobsListViewModel.swift */,
+				4C7212EB2A7E6F8A00DAE09F /* JobsListViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4C7212ED2A7E70F400DAE09F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		4C7212F02A7E71CC00DAE09F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C7212D92A7E6C4F00DAE09F /* ViewController.swift in Sources */,
+				4C7212EA2A7E6F5F00DAE09F /* JobsListViewModel.swift in Sources */,
+				4C7212EF2A7E712200DAE09F /* JobsCoordinators.swift in Sources */,
+				4C7212EC2A7E6F8A00DAE09F /* JobsListViewController.swift in Sources */,
 				4C7212D52A7E6C4F00DAE09F /* AppDelegate.swift in Sources */,
 				4C7212D72A7E6C4F00DAE09F /* SceneDelegate.swift in Sources */,
 			);
