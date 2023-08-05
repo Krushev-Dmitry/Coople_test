@@ -16,6 +16,8 @@
 		4C7212EF2A7E712200DAE09F /* JobsCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */; };
 		4C7212F32A7E724700DAE09F /* JobModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212F22A7E724700DAE09F /* JobModels.swift */; };
 		4C7212F52A7E726200DAE09F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212F42A7E726200DAE09F /* NetworkManager.swift */; };
+		4C7212FF2A7E77CF00DAE09F /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212FD2A7E77CF00DAE09F /* JobCell.swift */; };
+		4C7213002A7E77CF00DAE09F /* JobCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212FE2A7E77CF00DAE09F /* JobCellViewModel.swift */; };
 		923E99A32F7C7C5B69CCD0FA /* Pods_Coople_Krushev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92CEB5F7217DAFF0A1C0EAF /* Pods_Coople_Krushev.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		4C7212EE2A7E712200DAE09F /* JobsCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsCoordinators.swift; sourceTree = "<group>"; };
 		4C7212F22A7E724700DAE09F /* JobModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobModels.swift; sourceTree = "<group>"; };
 		4C7212F42A7E726200DAE09F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4C7212FD2A7E77CF00DAE09F /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
+		4C7212FE2A7E77CF00DAE09F /* JobCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCellViewModel.swift; sourceTree = "<group>"; };
 		A92CEB5F7217DAFF0A1C0EAF /* Pods_Coople_Krushev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coople_Krushev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC5AE6A3AC0418589467FEE /* Pods-Coople_Krushev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coople_Krushev.release.xcconfig"; path = "Target Support Files/Pods-Coople_Krushev/Pods-Coople_Krushev.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +89,7 @@
 		4C7212E82A7E6F3D00DAE09F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4C7212FC2A7E77CF00DAE09F /* Cells */,
 				4C7212E92A7E6F5F00DAE09F /* JobsListViewModel.swift */,
 				4C7212EB2A7E6F8A00DAE09F /* JobsListViewController.swift */,
 			);
@@ -113,6 +118,15 @@
 				4C7212F42A7E726200DAE09F /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		4C7212FC2A7E77CF00DAE09F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C7212FD2A7E77CF00DAE09F /* JobCell.swift */,
+				4C7212FE2A7E77CF00DAE09F /* JobCellViewModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		AE43B09F0055E91AB9CF27E3 /* Pods */ = {
@@ -249,7 +263,9 @@
 				4C7212EA2A7E6F5F00DAE09F /* JobsListViewModel.swift in Sources */,
 				4C7212EF2A7E712200DAE09F /* JobsCoordinators.swift in Sources */,
 				4C7212EC2A7E6F8A00DAE09F /* JobsListViewController.swift in Sources */,
+				4C7212FF2A7E77CF00DAE09F /* JobCell.swift in Sources */,
 				4C7212F52A7E726200DAE09F /* NetworkManager.swift in Sources */,
+				4C7213002A7E77CF00DAE09F /* JobCellViewModel.swift in Sources */,
 				4C7212F32A7E724700DAE09F /* JobModels.swift in Sources */,
 				4C7212D52A7E6C4F00DAE09F /* AppDelegate.swift in Sources */,
 				4C7212D72A7E6C4F00DAE09F /* SceneDelegate.swift in Sources */,
