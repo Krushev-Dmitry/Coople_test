@@ -1,0 +1,95 @@
+{
+  "status": 200,
+  "data": {
+    "items": [
+      {
+        "workAssignmentId": "0f1df0b4-f655-4b2c-abf5-23db9187a3fd",
+        "waReadableId": "60230573192",
+        "hourlyWage": {
+          "amount": 31.37,
+          "currencyId": 1
+        },
+        "salary": {
+          "amount": 1105.79,
+          "currencyId": 1
+        },
+        "jobSkill": {
+          "jobProfileId": 92,
+          "educationalLevelId": 62
+        },
+        "workAssignmentName": "Pflegehilfsperson (SRK) oder Pflegeassistenzperson (AGS/PA)",
+        "jobLocation": {
+          "addressStreet": "",
+          "extraAddress": "",
+          "zip": "4056",
+          "city": "Basel",
+          "state": "",
+          "countryId": 1
+        },
+        "periodFrom": 1691125200000,
+        "datePublished": 1689261339000,
+        "branchLink": "https://coople.app.link/xo0LgjG4oBb"
+      },
+      {
+        "workAssignmentId": "18e8e3b4-1e6a-498d-bd69-7a1b3282ea4f",
+        "waReadableId": "60230579596",
+        "hourlyWage": {
+          "amount": 27,
+          "currencyId": 1
+        },
+        "salary": {
+          "amount": 9450,
+          "currencyId": 1
+        },
+        "jobSkill": {
+          "jobProfileId": 92,
+          "educationalLevelId": 61
+        },
+        "workAssignmentName": "Flexible Pflegehilfskraft (w/m/d) für die Pflege für den Raum Brugg, Lenzburg, Baden",
+        "jobLocation": {
+          "addressStreet": "",
+          "extraAddress": "",
+          "zip": "5400",
+          "city": "Baden",
+          "state": "",
+          "countryId": 1
+        },
+        "periodFrom": 1691125200000,
+        "datePublished": 1690268895000,
+        "branchLink": "https://coople.app.link/yHlUNkHqIBb"
+      },
+      {
+        "workAssignmentId": "2f87489c-9e54-4bfd-902c-322c7426cfba",
+        "waReadableId": "60230579717",
+        "hourlyWage": {
+          "amount": 30,
+          "currencyId": 1
+        },
+        "salary": {
+          "amount": 11685,
+          "currencyId": 1
+        },
+        "jobSkill": {
+          "jobProfileId": 53
+        },
+        "workAssignmentName": "Fahrer 3.5t Kat B/E, Einsatzdauer 1 - 3 Monate.",
+        "jobLocation": {
+          "addressStreet": "",
+          "extraAddress": "",
+          "zip": "3053",
+          "city": "Münchenbuchsee",
+          "state": "",
+          "countryId": 1
+        },
+        "periodFrom": 1691125200000,
+        "datePublished": 1690279336000,
+        "branchLink": "https://coople.app.link/648JCm8CIBb"
+      }
+    ],
+    "total": 3
+  },
+  "errorCode": "OK",
+  "errorDetails": {},
+  "errorId": 0,
+  "error": false
+}

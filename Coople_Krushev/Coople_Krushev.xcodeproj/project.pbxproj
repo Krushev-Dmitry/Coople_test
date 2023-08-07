@@ -18,8 +18,20 @@
 		4C7212F52A7E726200DAE09F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212F42A7E726200DAE09F /* NetworkManager.swift */; };
 		4C7212FF2A7E77CF00DAE09F /* JobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212FD2A7E77CF00DAE09F /* JobCell.swift */; };
 		4C7213002A7E77CF00DAE09F /* JobCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7212FE2A7E77CF00DAE09F /* JobCellViewModel.swift */; };
+		4C72133C2A7E917F00DAE09F /* JobsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C72133B2A7E917F00DAE09F /* JobsResponse.json */; };
+		4C7213452A810A6B00DAE09F /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7213392A7E912F00DAE09F /* NetworkManagerTests.swift */; };
 		923E99A32F7C7C5B69CCD0FA /* Pods_Coople_Krushev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92CEB5F7217DAFF0A1C0EAF /* Pods_Coople_Krushev.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C7213342A7E90F900DAE09F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C7212C92A7E6C4F00DAE09F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C7212D02A7E6C4F00DAE09F;
+			remoteInfo = Coople_Krushev;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		037EE329146B20BCBFB29F73 /* Pods-Coople_Krushev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coople_Krushev.debug.xcconfig"; path = "Target Support Files/Pods-Coople_Krushev/Pods-Coople_Krushev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +48,9 @@
 		4C7212F42A7E726200DAE09F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4C7212FD2A7E77CF00DAE09F /* JobCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCell.swift; sourceTree = "<group>"; };
 		4C7212FE2A7E77CF00DAE09F /* JobCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCellViewModel.swift; sourceTree = "<group>"; };
+		4C7213302A7E90F900DAE09F /* Coople_KrushevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Coople_KrushevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7213392A7E912F00DAE09F /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		4C72133B2A7E917F00DAE09F /* JobsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JobsResponse.json; sourceTree = "<group>"; };
 		A92CEB5F7217DAFF0A1C0EAF /* Pods_Coople_Krushev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coople_Krushev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC5AE6A3AC0418589467FEE /* Pods-Coople_Krushev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coople_Krushev.release.xcconfig"; path = "Target Support Files/Pods-Coople_Krushev/Pods-Coople_Krushev.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C72132D2A7E90F900DAE09F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7212D32A7E6C4F00DAE09F /* Coople_Krushev */,
+				4C7213312A7E90F900DAE09F /* Coople_KrushevTests */,
 				4C7212D22A7E6C4F00DAE09F /* Products */,
 				AE43B09F0055E91AB9CF27E3 /* Pods */,
 				F07FC8485EC64C53E4756142 /* Frameworks */,
@@ -66,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				4C7212D12A7E6C4F00DAE09F /* Coople_Krushev.app */,
+				4C7213302A7E90F900DAE09F /* Coople_KrushevTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +153,23 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		4C7213312A7E90F900DAE09F /* Coople_KrushevTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C7213462A810E5800DAE09F /* NetworkManagerTests */,
+			);
+			path = Coople_KrushevTests;
+			sourceTree = "<group>";
+		};
+		4C7213462A810E5800DAE09F /* NetworkManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C72133B2A7E917F00DAE09F /* JobsResponse.json */,
+				4C7213392A7E912F00DAE09F /* NetworkManagerTests.swift */,
+			);
+			path = NetworkManagerTests;
+			sourceTree = "<group>";
+		};
 		AE43B09F0055E91AB9CF27E3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +209,24 @@
 			productReference = 4C7212D12A7E6C4F00DAE09F /* Coople_Krushev.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4C72132F2A7E90F900DAE09F /* Coople_KrushevTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C7213382A7E90FA00DAE09F /* Build configuration list for PBXNativeTarget "Coople_KrushevTests" */;
+			buildPhases = (
+				4C72132C2A7E90F900DAE09F /* Sources */,
+				4C72132D2A7E90F900DAE09F /* Frameworks */,
+				4C72132E2A7E90F900DAE09F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C7213352A7E90F900DAE09F /* PBXTargetDependency */,
+			);
+			name = Coople_KrushevTests;
+			productName = Coople_KrushevTests;
+			productReference = 4C7213302A7E90F900DAE09F /* Coople_KrushevTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,6 +239,11 @@
 				TargetAttributes = {
 					4C7212D02A7E6C4F00DAE09F = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					4C72132F2A7E90F900DAE09F = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 4C7212D02A7E6C4F00DAE09F;
 					};
 				};
 			};
@@ -197,6 +261,7 @@
 			projectRoot = "";
 			targets = (
 				4C7212D02A7E6C4F00DAE09F /* Coople_Krushev */,
+				4C72132F2A7E90F900DAE09F /* Coople_KrushevTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +273,14 @@
 			files = (
 				4C7212E12A7E6C5100DAE09F /* LaunchScreen.storyboard in Resources */,
 				4C7212DE2A7E6C5100DAE09F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C72132E2A7E90F900DAE09F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C72133C2A7E917F00DAE09F /* JobsResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +345,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C72132C2A7E90F900DAE09F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C7213452A810A6B00DAE09F /* NetworkManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C7213352A7E90F900DAE09F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C7212D02A7E6C4F00DAE09F /* Coople_Krushev */;
+			targetProxy = 4C7213342A7E90F900DAE09F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C7212DF2A7E6C5100DAE09F /* LaunchScreen.storyboard */ = {
@@ -456,6 +545,55 @@
 			};
 			name = Release;
 		};
+		4C7213362A7E90FA00DAE09F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UU55LYB87G;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "krushev.Coople-KrushevTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coople_Krushev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Coople_Krushev";
+			};
+			name = Debug;
+		};
+		4C7213372A7E90FA00DAE09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UU55LYB87G;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "krushev.Coople-KrushevTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coople_Krushev.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Coople_Krushev";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -473,6 +611,15 @@
 			buildConfigurations = (
 				4C7212E62A7E6C5100DAE09F /* Debug */,
 				4C7212E72A7E6C5100DAE09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C7213382A7E90FA00DAE09F /* Build configuration list for PBXNativeTarget "Coople_KrushevTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C7213362A7E90FA00DAE09F /* Debug */,
+				4C7213372A7E90FA00DAE09F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,22 +8,37 @@
 import Foundation
 import Combine
 
+protocol URLSessionProtocol {
+    func customDataTaskPublisher(for url: URL) -> AnyPublisher<(data: Data, response: URLResponse), URLError>
+}
+
+extension URLSession: URLSessionProtocol {
+    
+    func customDataTaskPublisher(for url: URL) -> AnyPublisher<(data: Data, response: URLResponse), URLError> {
+        return self.dataTaskPublisher(for: url).eraseToAnyPublisher()
+    }
+}
+
 protocol NetworkManagerProtocol {
     func getJobs() -> AnyPublisher<JobResponse, Error>
 }
 
 class NetworkManager: NetworkManagerProtocol {
-    static let shared = NetworkManager()
-    private init() {}
+    static let shared = NetworkManager(session: URLSession.shared)
+
+    private let session: URLSessionProtocol
+
+    init(session: URLSessionProtocol) {
+        self.session = session
+    }
 
     func getJobs() -> AnyPublisher<JobResponse, Error> {
-        //MARK: used https instead of http
         guard let url = URL(string:
                                 "https://www.coople.com/ch/resources/api/work-assignments/public-jobs/list?pageNum=0&pageSize=200") else {
-            fatalError("Invalid URL")
+            return Fail(outputType: JobResponse.self, failure: URLError(.badURL)).eraseToAnyPublisher()
         }
 
-        return URLSession.shared.dataTaskPublisher(for: url)
+        return session.customDataTaskPublisher(for: url)
             .map { $0.data }
             .decode(type: JobResponse.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
